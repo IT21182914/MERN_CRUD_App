@@ -1,8 +1,3 @@
-
-
-
-
-const express = require('express');
 const express = require('express');                //require express 
 const mongoose = require('mongoose');              //access mongoDB atlas through mongoose 
 const bodyParser = require ('body-parser');
@@ -34,4 +29,4 @@ app.listen(PORT, () =>{
 
     console.log(`App is running on ${PORT}`);
     
-});
+});   //Git practice
