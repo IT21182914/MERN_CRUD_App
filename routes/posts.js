@@ -1,5 +1,4 @@
 const express = require('express');                 //require express
-const { exists, findByIdAndRemove, findByIdAndUpdate } = require('../models/posts');
 const Posts = require('../models/posts');            //access the posts.js file that is in the models file
 
 const router = express.Router();
@@ -43,7 +42,7 @@ Posts.find().exec((err,posts)=>{
     if(err){
         return res.status(400).json({
          error:err
-
+  
         });
     }
 

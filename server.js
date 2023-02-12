@@ -1,6 +1,7 @@
 const express = require('express');                //require express 
 const mongoose = require('mongoose');              //access mongoDB atlas through mongoose 
 const bodyParser = require ('body-parser');
+const cors = require('cors');
 
 const app = express();                             //invoke express
 
@@ -9,6 +10,8 @@ const postRoutes = require('./routes/posts');
 
 //app middleware
 app.use(bodyParser.json());
+app.use(cors());
+
 
 //route middleware
 app.use(postRoutes);
